@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
-import linepy
 from linepy import *
 import json, time, random, tempfile, os, sys
 from gtts import gTTS
 from googletrans import Translator
 
-#client = LineClient(authToken='')
-#client = LineClient() Untuk Login Lewat Qr
-client = LineClient(id='email', passwd='pass')
-#client = LineClient(authToken='Token Mu') Untuk Login Via Token
+
+#client = LineClient()
+client = LineClient(id='corazoncz2@hotmail.com', passwd='neng14541')
+#client = LineClient(authToken='AUTH TOKEN')
 client.log("Auth Token : " + str(client.authToken))
 
 channel = LineChannel(client)
 client.log("Channel Access Token : " + str(channel.channelAccessToken))
+
 
 helpMessage =""" ─┅═✥WIB SelfBot✥═┅─
 
